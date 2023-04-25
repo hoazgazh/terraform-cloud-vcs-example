@@ -13,7 +13,7 @@ data "aws_ami" "ami" {
   owners = ["099720109477"]
 }
 
-resource "aws_instance" "ansible_server" {
-  ami           = data.aws_ami.ami.id
-  instance_type = "t3.small" // t3.micro -> t3.small
-}
+# resource "aws_instance" "ansible_server" {
+#   ami           = data.aws_ami.ami.id
+#   instance_type = "t3.small" // t3.micro -> t3.small
+# }
